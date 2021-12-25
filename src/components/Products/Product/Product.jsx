@@ -31,7 +31,7 @@ const Product = ({ product, onAddToCart }) => {
             {product.name}
           </Typography>
           <Typography gutterBottom variant="h5" component="h2">
-            ${product.price.formatted}
+            Rs.{product.price.formatted}
           </Typography>
         </div>
         <Typography

@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
+import { CommentOutlined, CoffeeOutlined } from "@ant-design/icons";
 import { Link, useLocation } from "react-router-dom";
 
 import logo from "../../assets/commerce.png";
@@ -53,7 +54,7 @@ const PrimarySearchAppBar = ({ totalItems }) => {
 
   return (
     <>
-      <AppBar position="fixed" className={classes.appBar} color="primary">
+      <AppBar position="fixed" className={classes.appBar} color="white">
         <Toolbar>
           <Typography
             component={Link}
@@ -68,11 +69,22 @@ const PrimarySearchAppBar = ({ totalItems }) => {
               height="25px"
               className={classes.image}
             />{" "}
-            Shopping
+            <div className={classes.Res}>Dot Restaurant</div>
           </Typography>
           <div className={classes.grow} />
           {location.pathname === "/" && (
             <div className={classes.button}>
+              <IconButton
+                component={Link}
+                to={{
+                  pathname: "https://hardcore-shirley-191b63.netlify.app/",
+                }}
+                target="_blank"
+                color="inherit"
+              >
+                Book.
+                <CoffeeOutlined />
+              </IconButton>
               <IconButton
                 component={Link}
                 to="/cart"
@@ -89,7 +101,8 @@ const PrimarySearchAppBar = ({ totalItems }) => {
                 target="_blank"
                 color="inherit"
               >
-                Chat
+                Chat.
+                <CommentOutlined />
               </IconButton>
             </div>
           )}

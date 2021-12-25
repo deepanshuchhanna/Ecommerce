@@ -16,16 +16,16 @@ import {
   // TeamOutlined,
   UserOutlined,
   AppstoreOutlined,
-  MenuOutlined,
-  StarOutlined,
+  // MenuOutlined,
+  // StarOutlined,
   // QuestionCircleOutlined,
-  LoginOutlined,
+  // LoginOutlined,
   // AreaChartOutlined,
   MessageOutlined,
 } from "@ant-design/icons";
 
 const { Header, Sider, Content } = Layout;
-const { SubMenu } = Menu;
+// const { SubMenu } = Menu;
 
 function Dashboard({ products, onAddToCart, ...props }) {
   const [collapsed, setCollapsed] = useState(true);
@@ -194,7 +194,7 @@ function Dashboard({ products, onAddToCart, ...props }) {
             {/* here menu item 2 is completed  and menu item 3 is started form here */}
 
             {/* MENU SECTION */}
-            <SubMenu
+            {/* <SubMenu
               key="sub1"
               icon={
                 <MenuOutlined
@@ -212,7 +212,7 @@ function Dashboard({ products, onAddToCart, ...props }) {
             <br />
 
             {/* SPECIAL - MENU SECTION */}
-            <SubMenu
+            {/* <SubMenu
               key="sub2"
               icon={
                 <StarOutlined
@@ -224,7 +224,7 @@ function Dashboard({ products, onAddToCart, ...props }) {
             >
               <Menu.Item key="9">Dish 1</Menu.Item>
               <Menu.Item key="10">Dish 2</Menu.Item>
-            </SubMenu>
+            </SubMenu> */}
             <br />
 
             {/* GALLERY SECTION */}
@@ -276,7 +276,7 @@ function Dashboard({ products, onAddToCart, ...props }) {
             <br />
 
             {/* LOGOUT SECTION */}
-            <Menu.Item
+            {/* <Menu.Item
               key="14"
               icon={
                 <LoginOutlined
@@ -286,7 +286,7 @@ function Dashboard({ products, onAddToCart, ...props }) {
               style={{ fontSize: "15px" }}
             >
               LogOut
-            </Menu.Item>
+            </Menu.Item> */}
           </Menu>
         </Sider>
         <Layout className="site-layout">
